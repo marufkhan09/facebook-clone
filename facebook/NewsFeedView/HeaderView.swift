@@ -29,7 +29,7 @@ struct HeaderView: View {
             
             Image(systemName: "photo.on.rectangle.angled").resizable().scaledToFill().frame(width: 20,height: 20).foregroundColor(.green)
             
-        }.padding(.horizontal).padding(.vertical,30)
+        }.padding(.horizontal).padding(.top,30).padding(.bottom)
     }
 }
 

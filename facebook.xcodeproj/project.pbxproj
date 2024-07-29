@@ -19,6 +19,10 @@
 		CAA83D7D2C57A0C200E39D6F /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA83D7C2C57A0C200E39D6F /* MainTabView.swift */; };
 		CAEF08A72C58057000C71AD0 /* NewsFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEF08A62C58057000C71AD0 /* NewsFeedView.swift */; };
 		CAEF08A92C580F2B00C71AD0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CAEF08A82C580F2B00C71AD0 /* .gitignore */; };
+		CAEF08AD2C581E6E00C71AD0 /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEF08AC2C581E6E00C71AD0 /* DividerView.swift */; };
+		CAEF08AF2C581EBB00C71AD0 /* MyStoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEF08AE2C581EBB00C71AD0 /* MyStoryCardView.swift */; };
+		CAEF08B12C58404D00C71AD0 /* StoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEF08B02C58404D00C71AD0 /* StoryCardView.swift */; };
+		CAEF08B32C58437E00C71AD0 /* StoryFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEF08B22C58437E00C71AD0 /* StoryFeedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,10 @@
 		CAA83D7C2C57A0C200E39D6F /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		CAEF08A62C58057000C71AD0 /* NewsFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedView.swift; sourceTree = "<group>"; };
 		CAEF08A82C580F2B00C71AD0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		CAEF08AC2C581E6E00C71AD0 /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
+		CAEF08AE2C581EBB00C71AD0 /* MyStoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStoryCardView.swift; sourceTree = "<group>"; };
+		CAEF08B02C58404D00C71AD0 /* StoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCardView.swift; sourceTree = "<group>"; };
+		CAEF08B22C58437E00C71AD0 /* StoryFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryFeedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +129,7 @@
 		CAA83D422C579F2A00E39D6F /* facebook */ = {
 			isa = PBXGroup;
 			children = (
+				CAEF08AA2C581E4D00C71AD0 /* CustomComponents */,
 				CAEF08A42C58037E00C71AD0 /* NewsFeedView */,
 				CAA83D712C579FB700E39D6F /* Core */,
 				CAA83D432C579F2A00E39D6F /* facebookApp.swift */,
@@ -186,8 +195,27 @@
 			children = (
 				CA1A19BD2C57FE3300706044 /* HeaderView.swift */,
 				CAEF08A62C58057000C71AD0 /* NewsFeedView.swift */,
+				CAEF08AE2C581EBB00C71AD0 /* MyStoryCardView.swift */,
+				CAEF08B02C58404D00C71AD0 /* StoryCardView.swift */,
+				CAEF08B22C58437E00C71AD0 /* StoryFeedView.swift */,
 			);
 			path = NewsFeedView;
+			sourceTree = "<group>";
+		};
+		CAEF08AA2C581E4D00C71AD0 /* CustomComponents */ = {
+			isa = PBXGroup;
+			children = (
+				CAEF08AB2C581E5800C71AD0 /* Views */,
+			);
+			path = CustomComponents;
+			sourceTree = "<group>";
+		};
+		CAEF08AB2C581E5800C71AD0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CAEF08AC2C581E6E00C71AD0 /* DividerView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,7 +351,11 @@
 			files = (
 				CA1A19BE2C57FE3300706044 /* HeaderView.swift in Sources */,
 				CAA83D462C579F2A00E39D6F /* ContentView.swift in Sources */,
+				CAEF08AD2C581E6E00C71AD0 /* DividerView.swift in Sources */,
 				CA1A19BC2C57F55B00706044 /* ProfileView.swift in Sources */,
+				CAEF08B12C58404D00C71AD0 /* StoryCardView.swift in Sources */,
+				CAEF08AF2C581EBB00C71AD0 /* MyStoryCardView.swift in Sources */,
+				CAEF08B32C58437E00C71AD0 /* StoryFeedView.swift in Sources */,
 				CAEF08A72C58057000C71AD0 /* NewsFeedView.swift in Sources */,
 				CAA83D442C579F2A00E39D6F /* facebookApp.swift in Sources */,
 				CAA83D7D2C57A0C200E39D6F /* MainTabView.swift in Sources */,

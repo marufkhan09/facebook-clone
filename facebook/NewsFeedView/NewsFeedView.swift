@@ -11,16 +11,21 @@ struct NewsFeedView: View {
     private var FacebookBlue = Color(red: 26/255, green: 103/255, blue:178/255)
     var body: some View {
         NavigationStack{
+            
             VStack {
                 
                 ScrollView {
                     HeaderView()
+                    DividerView()
+                    StoryFeedView()
+                    DividerView()
+                    Spacer()
                     
-                }
-                .scrollIndicators(.hidden)
+                }.scrollIndicators(.hidden)
+                
             }.toolbar() {
                 ToolbarItem(placement: .topBarLeading) {
-                    Text("Facebook").font(.system(size: 32,weight: .bold)).foregroundStyle(FacebookBlue)
+                    Text("facebook").font(.system(size: 32,weight: .bold)).foregroundStyle(FacebookBlue)
                     
                 }
                 ToolbarItem(placement: .topBarTrailing) {
@@ -30,12 +35,19 @@ struct NewsFeedView: View {
                         Image("messenger").resizable().scaledToFill().frame(width: 24,height: 24)
                     }
                 }
-             
+                
             }
         }
     }
 }
 
+
 #Preview {
     NewsFeedView()
 }
+
+
+
+
+
+
