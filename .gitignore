@@ -1,0 +1,65 @@
+# Xcode
+.DS_Store
+build/
+DerivedData/
+xcuserdata/
+*.xcscmblueprint
+
+# Swift Package Manager
+.build/
+Packages/
+Package.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock
+*.xcworkspace
+
+# Carthage
+Carthage/Build/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/readme.md
+
+# Code Injection
+.idea/
+*.hmap
+*.ipa
+*.app.dSYM
+*.playground/
+*.xcodeproj/
+*.xcworkspace/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*.swm
+
+# Build artifacts
+*.o
+*.d
+*.tbd
+*.swiftdoc
+*.swiftsourceinfo
+*.swiftmodule
+*.sym
+*.bcsymbolmap
+*.dSYM
+
+# User-specific files
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+# iOS specific
+*.moved-aside
+*.hmap
+
+# Simulator devices
+**/Devices/
+
