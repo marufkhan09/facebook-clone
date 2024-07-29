@@ -50,7 +50,6 @@
 		CAA83D5E2C579F3000E39D6F /* facebookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = facebookUITests.swift; sourceTree = "<group>"; };
 		CAA83D602C579F3000E39D6F /* facebookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = facebookUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CAA83D7C2C57A0C200E39D6F /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
-		CAEF08A52C58038700C71AD0 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedView.swift; path = ../../../../../../FeedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,7 +180,6 @@
 			isa = PBXGroup;
 			children = (
 				CA1A19BD2C57FE3300706044 /* HeaderView.swift */,
-				CAEF08A52C58038700C71AD0 /* FeedView.swift */,
 			);
 			path = NewsFeedView;
 			sourceTree = "<group>";
