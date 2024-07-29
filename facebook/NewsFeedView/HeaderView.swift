@@ -11,6 +11,7 @@ import SwiftUI
 struct HeaderView: View {
     var body: some View {
         HStack{
+           
             NavigationLink(destination: ProfileView()) {
                 Image("profile").resizable().frame(width: 40,height: 40).clipShape(Circle())
             }
