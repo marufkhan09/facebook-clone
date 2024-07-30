@@ -19,6 +19,13 @@ struct NewsFeedView: View {
                     DividerView()
                     StoryFeedView()
                     DividerView()
+                    ForEach(0..<10){ _ in
+                        PostView(facebookBlue: FacebookBlue)
+                    }
+                    
+                    
+                    
+                    
                     Spacer()
                     
                 }.scrollIndicators(.hidden)
@@ -45,9 +52,3 @@ struct NewsFeedView: View {
 #Preview {
     NewsFeedView()
 }
-
-
-
-
-
-
