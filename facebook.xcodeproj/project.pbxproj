@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		CA1A19BC2C57F55B00706044 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1A19BB2C57F55B00706044 /* ProfileView.swift */; };
 		CA1A19BE2C57FE3300706044 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1A19BD2C57FE3300706044 /* HeaderView.swift */; };
+		CA3B4ABF2C5A8B4C00E22630 /* ChipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3B4ABE2C5A8B4C00E22630 /* ChipModel.swift */; };
+		CA51C7BE2C5958E000F197E1 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA51C7BD2C5958E000F197E1 /* CustomButton.swift */; };
+		CA7797652C5A76D200DB6123 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7797642C5A76D200DB6123 /* ProfileHeaderView.swift */; };
+		CA7797672C5A780300DB6123 /* ChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7797662C5A780300DB6123 /* ChipView.swift */; };
 		CAA83D442C579F2A00E39D6F /* facebookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA83D432C579F2A00E39D6F /* facebookApp.swift */; };
 		CAA83D462C579F2A00E39D6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA83D452C579F2A00E39D6F /* ContentView.swift */; };
 		CAA83D482C579F2F00E39D6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAA83D472C579F2F00E39D6F /* Assets.xcassets */; };
@@ -46,6 +50,10 @@
 /* Begin PBXFileReference section */
 		CA1A19BB2C57F55B00706044 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		CA1A19BD2C57FE3300706044 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeaderView.swift; path = facebook/NewsFeedView/HeaderView.swift; sourceTree = SOURCE_ROOT; };
+		CA3B4ABE2C5A8B4C00E22630 /* ChipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipModel.swift; sourceTree = "<group>"; };
+		CA51C7BD2C5958E000F197E1 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		CA7797642C5A76D200DB6123 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		CA7797662C5A780300DB6123 /* ChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipView.swift; sourceTree = "<group>"; };
 		CAA83D402C579F2A00E39D6F /* facebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = facebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAA83D432C579F2A00E39D6F /* facebookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = facebookApp.swift; sourceTree = "<group>"; };
 		CAA83D452C579F2A00E39D6F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,8 +111,17 @@
 			isa = PBXGroup;
 			children = (
 				CA1A19BB2C57F55B00706044 /* ProfileView.swift */,
+				CA7797642C5A76D200DB6123 /* ProfileHeaderView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CA3B4ABD2C5A8B3D00E22630 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CA3B4ABE2C5A8B4C00E22630 /* ChipModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		CAA83D372C579F2A00E39D6F = {
@@ -131,6 +148,7 @@
 		CAA83D422C579F2A00E39D6F /* facebook */ = {
 			isa = PBXGroup;
 			children = (
+				CA3B4ABD2C5A8B3D00E22630 /* Models */,
 				CAEF08AA2C581E4D00C71AD0 /* CustomComponents */,
 				CAEF08A42C58037E00C71AD0 /* NewsFeedView */,
 				CAA83D712C579FB700E39D6F /* Core */,
@@ -217,6 +235,8 @@
 			children = (
 				CAEF08AC2C581E6E00C71AD0 /* DividerView.swift */,
 				CABB2EFC2C591798006EB95D /* PostView.swift */,
+				CA51C7BD2C5958E000F197E1 /* CustomButton.swift */,
+				CA7797662C5A780300DB6123 /* ChipView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -354,12 +374,16 @@
 			files = (
 				CA1A19BE2C57FE3300706044 /* HeaderView.swift in Sources */,
 				CAA83D462C579F2A00E39D6F /* ContentView.swift in Sources */,
+				CA3B4ABF2C5A8B4C00E22630 /* ChipModel.swift in Sources */,
 				CAEF08AD2C581E6E00C71AD0 /* DividerView.swift in Sources */,
 				CA1A19BC2C57F55B00706044 /* ProfileView.swift in Sources */,
+				CA7797672C5A780300DB6123 /* ChipView.swift in Sources */,
 				CAEF08B12C58404D00C71AD0 /* StoryCardView.swift in Sources */,
 				CAEF08AF2C581EBB00C71AD0 /* MyStoryCardView.swift in Sources */,
+				CA7797652C5A76D200DB6123 /* ProfileHeaderView.swift in Sources */,
 				CAEF08B32C58437E00C71AD0 /* StoryFeedView.swift in Sources */,
 				CAEF08A72C58057000C71AD0 /* NewsFeedView.swift in Sources */,
+				CA51C7BE2C5958E000F197E1 /* CustomButton.swift in Sources */,
 				CAA83D442C579F2A00E39D6F /* facebookApp.swift in Sources */,
 				CAA83D7D2C57A0C200E39D6F /* MainTabView.swift in Sources */,
 				CABB2EFD2C591798006EB95D /* PostView.swift in Sources */,

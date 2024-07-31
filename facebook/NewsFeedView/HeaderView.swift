@@ -12,7 +12,7 @@ struct HeaderView: View {
     var body: some View {
         HStack{
            
-            NavigationLink(destination: ProfileView()) {
+            NavigationLink(destination: ProfileView().navigationBarBackButtonHidden()) {
                 Image("profile").resizable().frame(width: 40,height: 40).clipShape(Circle())
             }
             
