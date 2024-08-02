@@ -29,6 +29,10 @@
 		CAAF48372C5D5E27000EEE98 /* ReelsNLiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAF48362C5D5E27000EEE98 /* ReelsNLiveView.swift */; };
 		CAAF48392C5D6630000EEE98 /* ReelsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAF48382C5D6630000EEE98 /* ReelsItemView.swift */; };
 		CAAF483B2C5D66D0000EEE98 /* ManagePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAF483A2C5D66D0000EEE98 /* ManagePostView.swift */; };
+		CAAF483E2C5D682D000EEE98 /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAF483D2C5D682D000EEE98 /* CreatePostView.swift */; };
+		CAAF48402C5D71E5000EEE98 /* ChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAF483F2C5D71E5000EEE98 /* ChoiceView.swift */; };
+		CAAF48432C5D89D5000EEE98 /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAF48422C5D89D5000EEE98 /* FriendsView.swift */; };
+		CAAF48452C5D9354000EEE98 /* FriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAF48442C5D9354000EEE98 /* FriendsCell.swift */; };
 		CABB2EFD2C591798006EB95D /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABB2EFC2C591798006EB95D /* PostView.swift */; };
 		CAEF08A72C58057000C71AD0 /* NewsFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEF08A62C58057000C71AD0 /* NewsFeedView.swift */; };
 		CAEF08A92C580F2B00C71AD0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CAEF08A82C580F2B00C71AD0 /* .gitignore */; };
@@ -81,6 +85,10 @@
 		CAAF48362C5D5E27000EEE98 /* ReelsNLiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsNLiveView.swift; sourceTree = "<group>"; };
 		CAAF48382C5D6630000EEE98 /* ReelsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsItemView.swift; sourceTree = "<group>"; };
 		CAAF483A2C5D66D0000EEE98 /* ManagePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagePostView.swift; sourceTree = "<group>"; };
+		CAAF483D2C5D682D000EEE98 /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
+		CAAF483F2C5D71E5000EEE98 /* ChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceView.swift; sourceTree = "<group>"; };
+		CAAF48422C5D89D5000EEE98 /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
+		CAAF48442C5D9354000EEE98 /* FriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCell.swift; sourceTree = "<group>"; };
 		CABB2EFC2C591798006EB95D /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		CAEF08A62C58057000C71AD0 /* NewsFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedView.swift; sourceTree = "<group>"; };
 		CAEF08A82C580F2B00C71AD0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -172,6 +180,8 @@
 		CAA83D422C579F2A00E39D6F /* facebook */ = {
 			isa = PBXGroup;
 			children = (
+				CAAF48412C5D8992000EEE98 /* Friends */,
+				CAAF483C2C5D6810000EEE98 /* PostCreateView */,
 				CA3B4ABD2C5A8B3D00E22630 /* Models */,
 				CAEF08AA2C581E4D00C71AD0 /* CustomComponents */,
 				CAEF08A42C58037E00C71AD0 /* NewsFeedView */,
@@ -224,6 +234,24 @@
 				CAA83D7C2C57A0C200E39D6F /* MainTabView.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		CAAF483C2C5D6810000EEE98 /* PostCreateView */ = {
+			isa = PBXGroup;
+			children = (
+				CAAF483D2C5D682D000EEE98 /* CreatePostView.swift */,
+				CAAF483F2C5D71E5000EEE98 /* ChoiceView.swift */,
+			);
+			path = PostCreateView;
+			sourceTree = "<group>";
+		};
+		CAAF48412C5D8992000EEE98 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				CAAF48422C5D89D5000EEE98 /* FriendsView.swift */,
+				CAAF48442C5D9354000EEE98 /* FriendsCell.swift */,
+			);
+			path = Friends;
 			sourceTree = "<group>";
 		};
 		CAEF08A42C58037E00C71AD0 /* NewsFeedView */ = {
@@ -390,6 +418,7 @@
 			files = (
 				CAAF483B2C5D66D0000EEE98 /* ManagePostView.swift in Sources */,
 				CA1004922C5AE8EC00829522 /* ProfileFriendsView.swift in Sources */,
+				CAAF48402C5D71E5000EEE98 /* ChoiceView.swift in Sources */,
 				CA1A19BE2C57FE3300706044 /* HeaderView.swift in Sources */,
 				CAA83D462C579F2A00E39D6F /* ContentView.swift in Sources */,
 				CA3B4ABF2C5A8B4C00E22630 /* ChipModel.swift in Sources */,
@@ -399,15 +428,18 @@
 				CA7797672C5A780300DB6123 /* ChipView.swift in Sources */,
 				CA34D7AD2C5C2CFB002E8E33 /* StickyHeader.swift in Sources */,
 				CAEF08B12C58404D00C71AD0 /* StoryCardView.swift in Sources */,
+				CAAF48432C5D89D5000EEE98 /* FriendsView.swift in Sources */,
 				CAEF08AF2C581EBB00C71AD0 /* MyStoryCardView.swift in Sources */,
 				CA7797652C5A76D200DB6123 /* ProfileHeaderView.swift in Sources */,
 				CAAF48372C5D5E27000EEE98 /* ReelsNLiveView.swift in Sources */,
 				CAEF08B32C58437E00C71AD0 /* StoryFeedView.swift in Sources */,
 				CA1004902C5AC1C000829522 /* FriendsGrid.swift in Sources */,
 				CAEF08A72C58057000C71AD0 /* NewsFeedView.swift in Sources */,
+				CAAF48452C5D9354000EEE98 /* FriendsCell.swift in Sources */,
 				CA10048C2C5AB64700829522 /* ProfileOptionsView.swift in Sources */,
 				CAAF48392C5D6630000EEE98 /* ReelsItemView.swift in Sources */,
 				CA51C7BE2C5958E000F197E1 /* CustomButton.swift in Sources */,
+				CAAF483E2C5D682D000EEE98 /* CreatePostView.swift in Sources */,
 				CAA83D442C579F2A00E39D6F /* facebookApp.swift in Sources */,
 				CAA83D7D2C57A0C200E39D6F /* MainTabView.swift in Sources */,
 				CABB2EFD2C591798006EB95D /* PostView.swift in Sources */,

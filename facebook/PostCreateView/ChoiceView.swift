@@ -8,11 +8,27 @@
 import SwiftUI
 
 struct ChoiceView: View {
+    private var imageName: String
+    private var title: String
+    private var onTap: () -> Void
+    init(imageName: String, title: String, onTap: @escaping () -> Void) {
+        self.imageName = imageName
+        self.title = title
+        self.onTap = onTap
+    }
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button(action: {
+            onTap()
+        }, label: {
+            HStack (spacing:10){
+                Image(systemName: imageName)
+                Text(title).font(.subheadline)
+                Text("▼").font(.system(size: 14))
+            }.padding(.horizontal).padding(.vertical,6).background(Color(.systemGray6)).fontWeight(.bold).clipShape(RoundedRectangle(cornerRadius: 8))
+        })
     }
 }
 
 #Preview {
-    ChoiceView()
+    ChoiceView(imageName: "person.2.fill", title: "Friends", onTap: {})
 }

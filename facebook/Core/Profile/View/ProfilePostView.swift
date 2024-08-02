@@ -29,10 +29,15 @@ struct ProfilePostView: View {
                 Button {
                     
                 } label: {
-                    HStack {
-                        Text("Whats on your mind?").foregroundStyle(.black)
-                        Spacer()
-                    }.padding(.horizontal).padding(.vertical,10)
+                    NavigationLink {
+                        CreatePostView().navigationBarBackButtonHidden()
+                    } label: {
+                        HStack {
+                            Text("Whats on your mind?").foregroundStyle(.black)
+                            Spacer()
+                        }.padding(.horizontal).padding(.vertical,10)
+                    }
+
                 }
                 
                 Image(systemName: "photo.on.rectangle.angled").resizable().scaledToFill().frame(width: 20,height: 20).foregroundColor(.green)

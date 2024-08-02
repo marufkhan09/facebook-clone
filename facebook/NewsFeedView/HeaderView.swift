@@ -9,6 +9,7 @@ import SwiftUI
 
 
 struct HeaderView: View {
+    @State private var showCreatePost : Bool = false
     var body: some View {
         HStack{
            
@@ -17,7 +18,7 @@ struct HeaderView: View {
             }
             
             Button {
-                
+                showCreatePost.toggle()
             } label: {
                 HStack {
                     Text("Whats on your mind?").foregroundStyle(.black)
@@ -29,7 +30,9 @@ struct HeaderView: View {
             
             Image(systemName: "photo.on.rectangle.angled").resizable().scaledToFill().frame(width: 20,height: 20).foregroundColor(.green)
             
-        }.padding(.horizontal).padding(.top,30).padding(.bottom)
+        }.padding(.horizontal).padding(.top,30).padding(.bottom).fullScreenCover(isPresented: $showCreatePost, content: {
+            CreatePostView().navigationBarBackButtonHidden()
+        })
     }
 }
 

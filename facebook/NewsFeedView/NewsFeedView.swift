@@ -11,7 +11,6 @@ struct NewsFeedView: View {
     private var FacebookBlue = Color(red: 26/255, green: 103/255, blue:178/255)
     var body: some View {
         NavigationStack{
-            
             VStack {
                 
                 ScrollView {
@@ -22,10 +21,6 @@ struct NewsFeedView: View {
                     ForEach(0..<10){ _ in
                         PostView(facebookBlue: FacebookBlue)
                     }
-                    
-                    
-                    
-                    
                     Spacer()
                     
                 }.scrollIndicators(.hidden)
