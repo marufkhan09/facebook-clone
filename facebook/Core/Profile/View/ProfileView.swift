@@ -1,66 +1,44 @@
-//
-//  ProfileView.swift
-//  facebook
-//
-//  Created by Maruf Khan on 29/7/24.
-//
-
 import SwiftUI
 
 struct ProfileView: View {
-    @State private var chips = [
-        ChipModel(name: "Posts"),
-        ChipModel(name: "Photos"),
-        ChipModel(name: "Reels")
-    ]
-    @Environment(\.dismiss)  private var dismiss
-    @State private var selectedChip: UUID?
-    private func selectChip(_ chip: ChipModel) {
-        if selectedChip == chip.id {
-            selectedChip = nil
-        } else {
-            selectedChip = chip.id
-        }
-        print("Selected chip: \(chip.name)")
-    }
-
+    
+    @Environment(\.dismiss) private var dismiss
+    private var FacebookBlue = Color(red: 26/255, green: 103/255, blue:178/255)
     var body: some View {
         GeometryReader { proxy in
-            ScrollView{
-                ProfileHeaderView(width: proxy.size.width)
-                DividerView()
-                ScrollView(.horizontal, showsIndicators: false) {
-                    LazyHStack {
-                        ForEach(chips) { chip in
-                            ChipView(
-                                chip: chip,
-                                isSelected: chip.id == selectedChip,
-                                onTap: {
-                                    selectChip(chip)
-                                }
-                            )
-                            .padding(.horizontal, 5)
-                        }
-                    }
-                    .padding(.horizontal)
-                }
-                .frame(height: 36) // Adjust height as needed
-                
-                
-                
-                
-                
-                
-            }.scrollIndicators(.hidden).navigationTitle("Maruf khan").toolbar {
-                ToolbarItem(placement: .topBarLeading) {
+            ScrollView {
+                LazyVStack(alignment: .leading, spacing: 16, pinnedViews: [.sectionHeaders]) {
+                    ProfileHeaderView(width: proxy.size.width)
                     
+                    Section(header: StickyHeader()) {
+                        
+                        ProfileFriendsView()
+                        FriendsGrid().frame(width: proxy.size.width, height: 450)
+                        ManagePostView(width: proxy.size.width)
+                        
+                        
+                        //post status from profile
+                        ProfilePostView()
+                        ReelsNLiveView()
+                        
+                        
+                        ForEach(0..<5){ _ in
+                            
+PostView(facebookBlue: FacebookBlue)
+                        }
+                        
+                    }
+                }
+            }
+            .scrollIndicators(.hidden)
+            .navigationTitle("Maruf Khan")
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
                     Button(action: {
                         dismiss.callAsFunction()
                     }, label: {
-                        Image( systemName:"arrow.left").foregroundColor(.black).fontWeight(.bold)
+                        Image(systemName: "arrow.left").foregroundColor(.black).fontWeight(.bold)
                     })
-                    
-                    
                 }
                 ToolbarItem(placement: .topBarTrailing) {
                     Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
@@ -71,6 +49,8 @@ struct ProfileView: View {
         }
     }
 }
+
+
 
 #Preview {
     ProfileView()
