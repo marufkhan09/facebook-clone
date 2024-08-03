@@ -11,10 +11,10 @@ struct MainTabView: View {
     var body: some View {
         TabView {
             NewsFeedView().tabItem { Image(systemName: "house") }
-            Text("Video").tabItem { Image(systemName: "play.tv") }
+            Text("Video.fill").tabItem { Image(systemName: "play.tv") }
             FriendsView().tabItem { Image(systemName: "person.2") }
-            Text("Marketplace").tabItem { Image(systemName:"scribble") }
-            Text("Menu").tabItem { Image(systemName: "line.3.horizontal") }
+            MarketPlaceView().tabItem { Image("marketplace") }
+            MenuView().tabItem { Image(systemName: "line.3.horizontal") }
         }
     }
 }

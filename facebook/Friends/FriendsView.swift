@@ -13,10 +13,10 @@ struct FriendsView: View {
             ScrollView {
                 VStack(alignment:.leading ,spacing:16) {
                     HStack {
-                        CustomButton(title: "Suggestions", backgroundColor: Color(.systemGray5), textColor: Color(.darkGray), iconColor: Color(.systemGray), cornerRadius: 25,width:100) {
+                        CustomButton(title: "Suggestions", backgroundColor: Color(.systemGray5), textColor: Color(.darkGray), iconColor: Color(.systemGray), cornerRadius: 25,width:140) {
                             
                         }
-                        CustomButton(title: "Your friends", backgroundColor: Color(.systemGray5), textColor: Color(.darkGray), iconColor: Color(.systemGray), cornerRadius: 25,width:90) {
+                        CustomButton(title: "Your friends", backgroundColor: Color(.systemGray5), textColor: Color(.darkGray), iconColor: Color(.systemGray), cornerRadius: 25,width:140) {
                             
                         }
                         Spacer()

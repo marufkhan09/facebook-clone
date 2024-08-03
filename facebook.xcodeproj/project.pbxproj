@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA0E80B52C5E3BF300186726 /* MarketPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0E80B42C5E3BF300186726 /* MarketPlaceView.swift */; };
 		CA10048C2C5AB64700829522 /* ProfileOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA10048B2C5AB64700829522 /* ProfileOptionsView.swift */; };
 		CA1004902C5AC1C000829522 /* FriendsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA10048F2C5AC1C000829522 /* FriendsGrid.swift */; };
 		CA1004922C5AE8EC00829522 /* ProfileFriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1004912C5AE8EC00829522 /* ProfileFriendsView.swift */; };
+		CA1802022C5E950900D089F4 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1802012C5E950900D089F4 /* MenuView.swift */; };
 		CA1A19BC2C57F55B00706044 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1A19BB2C57F55B00706044 /* ProfileView.swift */; };
 		CA1A19BE2C57FE3300706044 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1A19BD2C57FE3300706044 /* HeaderView.swift */; };
 		CA34D7AD2C5C2CFB002E8E33 /* StickyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA34D7AC2C5C2CFB002E8E33 /* StickyHeader.swift */; };
@@ -60,9 +62,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA0E80B42C5E3BF300186726 /* MarketPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPlaceView.swift; sourceTree = "<group>"; };
 		CA10048B2C5AB64700829522 /* ProfileOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptionsView.swift; sourceTree = "<group>"; };
 		CA10048F2C5AC1C000829522 /* FriendsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsGrid.swift; sourceTree = "<group>"; };
 		CA1004912C5AE8EC00829522 /* ProfileFriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFriendsView.swift; sourceTree = "<group>"; };
+		CA1802012C5E950900D089F4 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		CA1A19BB2C57F55B00706044 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		CA1A19BD2C57FE3300706044 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeaderView.swift; path = facebook/NewsFeedView/HeaderView.swift; sourceTree = SOURCE_ROOT; };
 		CA34D7AC2C5C2CFB002E8E33 /* StickyHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeader.swift; sourceTree = "<group>"; };
@@ -123,6 +127,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA0E80B32C5E3BDD00186726 /* MarketView */ = {
+			isa = PBXGroup;
+			children = (
+				CA0E80B42C5E3BF300186726 /* MarketPlaceView.swift */,
+			);
+			path = MarketView;
+			sourceTree = "<group>";
+		};
+		CA1801FF2C5E948900D089F4 /* VideosView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VideosView;
+			sourceTree = "<group>";
+		};
+		CA1802002C5E94FC00D089F4 /* MenuView */ = {
+			isa = PBXGroup;
+			children = (
+				CA1802012C5E950900D089F4 /* MenuView.swift */,
+			);
+			path = MenuView;
+			sourceTree = "<group>";
+		};
 		CA1A19B92C57F4DE00706044 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +207,9 @@
 		CAA83D422C579F2A00E39D6F /* facebook */ = {
 			isa = PBXGroup;
 			children = (
+				CA1802002C5E94FC00D089F4 /* MenuView */,
+				CA1801FF2C5E948900D089F4 /* VideosView */,
+				CA0E80B32C5E3BDD00186726 /* MarketView */,
 				CAAF48412C5D8992000EEE98 /* Friends */,
 				CAAF483C2C5D6810000EEE98 /* PostCreateView */,
 				CA3B4ABD2C5A8B3D00E22630 /* Models */,
@@ -432,6 +462,8 @@
 				CAEF08AF2C581EBB00C71AD0 /* MyStoryCardView.swift in Sources */,
 				CA7797652C5A76D200DB6123 /* ProfileHeaderView.swift in Sources */,
 				CAAF48372C5D5E27000EEE98 /* ReelsNLiveView.swift in Sources */,
+				CA0E80B52C5E3BF300186726 /* MarketPlaceView.swift in Sources */,
+				CA1802022C5E950900D089F4 /* MenuView.swift in Sources */,
 				CAEF08B32C58437E00C71AD0 /* StoryFeedView.swift in Sources */,
 				CA1004902C5AC1C000829522 /* FriendsGrid.swift in Sources */,
 				CAEF08A72C58057000C71AD0 /* NewsFeedView.swift in Sources */,
