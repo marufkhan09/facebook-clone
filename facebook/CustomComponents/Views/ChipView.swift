@@ -7,9 +7,9 @@ struct ChipView: View {
     let onTap: () -> Void
     
     var body: some View {
-        Text(name)
-            .padding(.horizontal, 12)
-            .padding(.vertical, 8)
+        Text(name).font(.headline)
+            .padding(.horizontal)
+            .padding(.vertical, 10)
             .background(
                 RoundedRectangle(cornerRadius: 20)
                     .fill(isSelected ? Color.blue.opacity(0.1) : Color.clear)

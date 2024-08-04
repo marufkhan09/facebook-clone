@@ -7,31 +7,24 @@
 
 import SwiftUI
 
-
-
-struct ProfileOptionsView: View {
-    @State private var chips = [
-        ChipModel(name: "Posts",isSelected: true),
-        ChipModel(name: "Photos",isSelected:false),
-        ChipModel(name: "Reels",isSelected:false)
-    ]
-    
+struct ChipOptionsView: View {
     @State private var selectedChip: UUID?
-    
+    var chips: [ChipModel]
+    var onChipSelected: (ChipModel) -> Void
+
     private func selectChip(_ chip: ChipModel) {
         if selectedChip == chip.id {
             selectedChip = nil
         } else {
             selectedChip = chip.id
         }
-        print("Selected chip: \(chip.name)")
+        onChipSelected(chip)
     }
 
-    // Method to find the initial selected chip ID
     private func getInitialChip() -> UUID? {
         return chips.first(where: { $0.isSelected })?.id
     }
-    
+
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHStack {
@@ -43,18 +36,28 @@ struct ProfileOptionsView: View {
                             selectChip(chip)
                         }
                     )
-                    
                 }
-            }.padding(.horizontal)
-          
-        }.scrollDisabled(true).onAppear {
-            // Set the initial selected chip when the view appears
+            }
+            .padding(.horizontal)
+        }
+        .scrollDisabled(true)
+        .onAppear {
             selectedChip = getInitialChip()
         }
-        .frame(height: 36).padding(.vertical,6)
+        .frame(height: 36)
+        .padding(.vertical, 6)
     }
 }
 
 #Preview {
-    ProfileOptionsView()
+    ChipOptionsView(
+        chips: [
+            ChipModel(name: "Posts", isSelected: true),
+            ChipModel(name: "Photos", isSelected: false),
+            ChipModel(name: "Reels", isSelected: false)
+        ],
+        onChipSelected: { chip in
+            print("Selected chip: \(chip.name)")
+        }
+    )
 }

@@ -6,14 +6,18 @@
 //
 
 import SwiftUI
-
+import AVKit
 
 
 struct PostView: View {
-    private var facebookBlue: Color
-    init(facebookBlue: Color) {
-        self.facebookBlue = facebookBlue
+    private var facebookBlue:Color = Color(red: 26/255, green: 103/255, blue:178/255)
+    
+    private var isVideo: Bool
+    
+    init(isVideo: Bool) {
+        self.isVideo = isVideo
     }
+
     var body: some View {
         VStack(alignment:.leading){
             HStack{
@@ -40,7 +44,11 @@ struct PostView: View {
             //caption
             Text("Time to party with the team").padding(.horizontal)
             //post photo
-            Image("office").resizable().scaledToFit()
+            if(!isVideo){
+                Image("office").resizable().scaledToFit()
+            }else {
+                VideoPlayerView(videoURL: "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4")
+            }
             
             //like, comment and share
             HStack(spacing:3){
@@ -88,5 +96,5 @@ struct PostView: View {
 }
 
 #Preview {
-    PostView(facebookBlue: .blue)
+    PostView(isVideo: false)
 }

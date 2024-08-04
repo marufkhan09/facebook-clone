@@ -24,11 +24,11 @@ struct FriendsCell: View {
                 
                 HStack{
                     CustomButton(title: "Confirm",
-                                 backgroundColor: .blue, textColor: .white, iconColor: .blue, cornerRadius: 8,width:120) {
+                                 backgroundColor: .blue, textColor: .white, iconColor: .blue, cornerRadius: 8,width:130) {
                         
                     }
                     CustomButton(title: "Delete",
-                                 backgroundColor: Color(.systemGray5), textColor: Color(.systemGray), iconColor: .blue, cornerRadius: 8,width:120) {
+                                 backgroundColor: Color(.systemGray5), textColor: Color(.systemGray), iconColor: .blue, cornerRadius: 8,width:130) {
                         
                     }
                 }

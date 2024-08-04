@@ -11,7 +11,7 @@ struct MainTabView: View {
     var body: some View {
         TabView {
             NewsFeedView().tabItem { Image(systemName: "house") }
-            Text("Video.fill").tabItem { Image(systemName: "play.tv") }
+            VideoView().tabItem { Image(systemName: "play.tv") }
             FriendsView().tabItem { Image(systemName: "person.2") }
             MarketPlaceView().tabItem { Image("marketplace") }
             MenuView(showLogoutAlert: false).tabItem { Image(systemName: "line.3.horizontal") }

@@ -35,13 +35,13 @@ struct ProfileHeaderView: View {
                     Text("Personal Bio Description").font(.system(size: 16,weight: .regular))
                     
                     HStack(alignment: .center,spacing: 10) {
-                        CustomButton(icon:Image(systemName: "plus"), title: "Add to Story", backgroundColor: .blue, textColor: .white, iconColor: .white, cornerRadius: 8,width: (width*0.33)) {
+                        CustomButton(icon:Image(systemName: "plus"), title: "Add to Story", backgroundColor: .blue, textColor: .white, iconColor: .white, cornerRadius: 8,width: (width*0.4)) {
                             
                         }
-                        CustomButton(icon:Image(systemName: "pencil"), title: "Edit Profile", backgroundColor: Color(.systemGray4), textColor: Color(.black), iconColor: .black, cornerRadius: 8,width: (width*0.3)) {
+                        CustomButton(icon:Image(systemName: "pencil"), title: "Edit Profile", backgroundColor: Color(.systemGray4), textColor: Color(.black), iconColor: .black, cornerRadius: 8,width: (width*0.4)) {
                             
                         }
-                        CustomButton(icon:Image(systemName: "ellipsis"), backgroundColor: Color(.systemGray4), textColor: Color(.black), iconColor: .black, cornerRadius: 8) {
+                        CustomButton(icon:Image(systemName: "ellipsis"), backgroundColor: Color(.systemGray4), textColor: Color(.black), iconColor: .black, cornerRadius: 8,width:44) {
                             
                         }
                     }

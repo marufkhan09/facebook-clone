@@ -24,7 +24,7 @@ struct ProfileView: View {
                         
                         ForEach(0..<5){ _ in
                             
-PostView(facebookBlue: FacebookBlue)
+                            PostView(isVideo:false)
                         }
                         
                     }

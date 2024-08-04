@@ -19,7 +19,7 @@ struct NewsFeedView: View {
                     StoryFeedView()
                     DividerView()
                     ForEach(0..<10){ _ in
-                        PostView(facebookBlue: FacebookBlue)
+                        PostView(isVideo: false)
                     }
                     Spacer()
                     
