@@ -14,7 +14,7 @@ struct MainTabView: View {
             Text("Video.fill").tabItem { Image(systemName: "play.tv") }
             FriendsView().tabItem { Image(systemName: "person.2") }
             MarketPlaceView().tabItem { Image("marketplace") }
-            MenuView().tabItem { Image(systemName: "line.3.horizontal") }
+            MenuView(showLogoutAlert: false).tabItem { Image(systemName: "line.3.horizontal") }
         }
     }
 }

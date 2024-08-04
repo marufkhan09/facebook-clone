@@ -11,7 +11,9 @@
 		CA10048C2C5AB64700829522 /* ProfileOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA10048B2C5AB64700829522 /* ProfileOptionsView.swift */; };
 		CA1004902C5AC1C000829522 /* FriendsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA10048F2C5AC1C000829522 /* FriendsGrid.swift */; };
 		CA1004922C5AE8EC00829522 /* ProfileFriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1004912C5AE8EC00829522 /* ProfileFriendsView.swift */; };
-		CA1802022C5E950900D089F4 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1802012C5E950900D089F4 /* MenuView.swift */; };
+		CA12B29E2C5FD36F00290617 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA12B29D2C5FD36F00290617 /* MenuView.swift */; };
+		CA12B2A02C5FE00600290617 /* MenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA12B29F2C5FE00600290617 /* MenuHeaderView.swift */; };
+		CA12B2A22C5FE97500290617 /* MenuGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA12B2A12C5FE97500290617 /* MenuGridView.swift */; };
 		CA1A19BC2C57F55B00706044 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1A19BB2C57F55B00706044 /* ProfileView.swift */; };
 		CA1A19BE2C57FE3300706044 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1A19BD2C57FE3300706044 /* HeaderView.swift */; };
 		CA34D7AD2C5C2CFB002E8E33 /* StickyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA34D7AC2C5C2CFB002E8E33 /* StickyHeader.swift */; };
@@ -42,6 +44,8 @@
 		CAEF08AF2C581EBB00C71AD0 /* MyStoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEF08AE2C581EBB00C71AD0 /* MyStoryCardView.swift */; };
 		CAEF08B12C58404D00C71AD0 /* StoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEF08B02C58404D00C71AD0 /* StoryCardView.swift */; };
 		CAEF08B32C58437E00C71AD0 /* StoryFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEF08B22C58437E00C71AD0 /* StoryFeedView.swift */; };
+		CAF0A1232C600B13000FDEEA /* DropdownButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF0A1222C600B13000FDEEA /* DropdownButtonView.swift */; };
+		CAF0A1252C60115A000FDEEA /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF0A1242C60115A000FDEEA /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +70,9 @@
 		CA10048B2C5AB64700829522 /* ProfileOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptionsView.swift; sourceTree = "<group>"; };
 		CA10048F2C5AC1C000829522 /* FriendsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsGrid.swift; sourceTree = "<group>"; };
 		CA1004912C5AE8EC00829522 /* ProfileFriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFriendsView.swift; sourceTree = "<group>"; };
-		CA1802012C5E950900D089F4 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		CA12B29D2C5FD36F00290617 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		CA12B29F2C5FE00600290617 /* MenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHeaderView.swift; sourceTree = "<group>"; };
+		CA12B2A12C5FE97500290617 /* MenuGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuGridView.swift; sourceTree = "<group>"; };
 		CA1A19BB2C57F55B00706044 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		CA1A19BD2C57FE3300706044 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeaderView.swift; path = facebook/NewsFeedView/HeaderView.swift; sourceTree = SOURCE_ROOT; };
 		CA34D7AC2C5C2CFB002E8E33 /* StickyHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeader.swift; sourceTree = "<group>"; };
@@ -100,6 +106,8 @@
 		CAEF08AE2C581EBB00C71AD0 /* MyStoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStoryCardView.swift; sourceTree = "<group>"; };
 		CAEF08B02C58404D00C71AD0 /* StoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCardView.swift; sourceTree = "<group>"; };
 		CAEF08B22C58437E00C71AD0 /* StoryFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryFeedView.swift; sourceTree = "<group>"; };
+		CAF0A1222C600B13000FDEEA /* DropdownButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownButtonView.swift; sourceTree = "<group>"; };
+		CAF0A1242C60115A000FDEEA /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +153,11 @@
 		CA1802002C5E94FC00D089F4 /* MenuView */ = {
 			isa = PBXGroup;
 			children = (
-				CA1802012C5E950900D089F4 /* MenuView.swift */,
+				CA12B29D2C5FD36F00290617 /* MenuView.swift */,
+				CA12B29F2C5FE00600290617 /* MenuHeaderView.swift */,
+				CA12B2A12C5FE97500290617 /* MenuGridView.swift */,
+				CAF0A1222C600B13000FDEEA /* DropdownButtonView.swift */,
+				CAF0A1242C60115A000FDEEA /* SettingView.swift */,
 			);
 			path = MenuView;
 			sourceTree = "<group>";
@@ -449,6 +461,7 @@
 				CAAF483B2C5D66D0000EEE98 /* ManagePostView.swift in Sources */,
 				CA1004922C5AE8EC00829522 /* ProfileFriendsView.swift in Sources */,
 				CAAF48402C5D71E5000EEE98 /* ChoiceView.swift in Sources */,
+				CA12B2A22C5FE97500290617 /* MenuGridView.swift in Sources */,
 				CA1A19BE2C57FE3300706044 /* HeaderView.swift in Sources */,
 				CAA83D462C579F2A00E39D6F /* ContentView.swift in Sources */,
 				CA3B4ABF2C5A8B4C00E22630 /* ChipModel.swift in Sources */,
@@ -456,6 +469,7 @@
 				CA1A19BC2C57F55B00706044 /* ProfileView.swift in Sources */,
 				CA34D7B12C5C313C002E8E33 /* ProfilePostView.swift in Sources */,
 				CA7797672C5A780300DB6123 /* ChipView.swift in Sources */,
+				CA12B29E2C5FD36F00290617 /* MenuView.swift in Sources */,
 				CA34D7AD2C5C2CFB002E8E33 /* StickyHeader.swift in Sources */,
 				CAEF08B12C58404D00C71AD0 /* StoryCardView.swift in Sources */,
 				CAAF48432C5D89D5000EEE98 /* FriendsView.swift in Sources */,
@@ -463,11 +477,12 @@
 				CA7797652C5A76D200DB6123 /* ProfileHeaderView.swift in Sources */,
 				CAAF48372C5D5E27000EEE98 /* ReelsNLiveView.swift in Sources */,
 				CA0E80B52C5E3BF300186726 /* MarketPlaceView.swift in Sources */,
-				CA1802022C5E950900D089F4 /* MenuView.swift in Sources */,
 				CAEF08B32C58437E00C71AD0 /* StoryFeedView.swift in Sources */,
 				CA1004902C5AC1C000829522 /* FriendsGrid.swift in Sources */,
+				CAF0A1252C60115A000FDEEA /* SettingView.swift in Sources */,
 				CAEF08A72C58057000C71AD0 /* NewsFeedView.swift in Sources */,
 				CAAF48452C5D9354000EEE98 /* FriendsCell.swift in Sources */,
+				CAF0A1232C600B13000FDEEA /* DropdownButtonView.swift in Sources */,
 				CA10048C2C5AB64700829522 /* ProfileOptionsView.swift in Sources */,
 				CAAF48392C5D6630000EEE98 /* ReelsItemView.swift in Sources */,
 				CA51C7BE2C5958E000F197E1 /* CustomButton.swift in Sources */,
@@ -475,6 +490,7 @@
 				CAA83D442C579F2A00E39D6F /* facebookApp.swift in Sources */,
 				CAA83D7D2C57A0C200E39D6F /* MainTabView.swift in Sources */,
 				CABB2EFD2C591798006EB95D /* PostView.swift in Sources */,
+				CA12B2A02C5FE00600290617 /* MenuHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

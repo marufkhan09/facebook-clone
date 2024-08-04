@@ -1,110 +1,91 @@
 //
-//  MenuView.swift
+//  MenuNewView.swift
 //  facebook
 //
-//  Created by Maruf Khan on 3/8/24.
+//  Created by Maruf Khan on 4/8/24.
 //
 
 import SwiftUI
 
 struct MenuView: View {
     
-    let twoColumnGrid = [
-        GridItem(.flexible()),
-        GridItem(.flexible())
-    ]
-    
- private var shortcutArray: [String: String] = [
-        "Memories": "gobackward",
-        "Saved": "bookmark.fill",
-        "Groups": "person.2.circle",
-        "Video": "play.tv.fill",
-        "Marketplace": "storefront.fill",
-        "Friends": "person.2.fill",
-        "Feeds": "calendar.badge.clock",
-        "Events": "calendar"
-    ]
-
+    @State private var showLogoutAlert: Bool
+    init(showLogoutAlert: Bool) {
+        self.showLogoutAlert = showLogoutAlert
+    }
     
     var body: some View {
-        NavigationView{
+        NavigationStack{
             GeometryReader { proxy in
                 ScrollView {
-                    VStack {
-                        VStack(alignment:.leading) {
-                            HStack(alignment:.center) {
-                                Image("profile").resizable().frame(width: 50,height: 50).clipShape(Circle()).padding(.leading,8)
-                                
-                                Text("Maruf Khan")
-                                Spacer()
-                                Image(systemName: "chevron.down.circle.fill").resizable().scaledToFit().foregroundColor(Color(.systemGray)).frame(width: 24,height: 24)
-                            }
-                            Divider()
-                            HStack(alignment:.center) {
-                                Image(systemName: "plus.circle.fill").resizable().scaledToFit().frame(width: 30,height: 30).padding(.leading,8)
-                                Text("Create another profile")
-                                Spacer()
-                            }.padding(.all,8)
-                        }.padding().background(.white).clipShape(RoundedRectangle(cornerRadius: 8)).padding(.horizontal).padding(.vertical).background(Color(.systemGray6))
+                    VStack{
+                        MenuHeaderView()
                         
                         HStack {
-                            Text("Your Shortcuts").fontWeight(.semibold).foregroundStyle(Color(.systemGray))
+                            Text("Your Shortcuts")
+                                .fontWeight(.semibold)
+                                .foregroundColor(Color(.systemGray))
+                            
                             Spacer()
-                        }.padding(.horizontal)
+                        }
+                        .padding(.horizontal)
+                        .padding(.top, 8)
                         
-                        LazyVGrid(columns: twoColumnGrid, spacing: 12) {
-                            ForEach(Array(shortcutArray.keys), id: \.self) { key in
-                                if let value = shortcutArray[key] {
-                                    VStack(alignment: .leading, spacing: 12) {
-                                        Image(systemName: value).resizable().scaledToFit().frame(width:28,height:28).foregroundStyle(.blue)
-                                        Text(key).font(.headline)
-                                    }
-                                    .frame(width: proxy.size.width * 0.36, height: 60, alignment: .leading)
-                                    .padding(.all,18)
-                                    .background(Color.white)
-                                    .clipShape(RoundedRectangle(cornerRadius: 8))
-                                }
-                            }
-                        }.padding(.horizontal)
+                        MenuGridView(width: proxy.size.width).padding(.vertical)
                         
+                    }
+                    
+                    CustomButton(title:"See more" ,backgroundColor: Color(.systemGray3), textColor: Color(.darkGray), iconColor: Color(.darkGray), cornerRadius: 8,height: 44, width: proxy.size.width - 30) {
                         
-                        
-                    }.background(Color(.systemGray6))
-                }.scrollIndicators(.hidden)
-                    .toolbar(content: {
-                        ToolbarItem(placement: .topBarLeading) {
+                    }
+                    
+                    
+                    SettingView().padding(.vertical)
+                    
+                    CustomButton(title:"Log Out" ,backgroundColor: Color(.systemGray3), textColor: Color(.darkGray), iconColor: Color(.darkGray), cornerRadius: 8,height: 44, width: proxy.size.width - 30) {
+                        showLogoutAlert.toggle()
+                    }
+                    
+                } .alert("Confirm Logout", isPresented: $showLogoutAlert) {
+                    Button("Cancel", role: .cancel) { }
+                    Button("Logout", role: .destructive) {
+                        // Perform logout action here
+                        print("Logged out")
+                    }
+                } message: {
+                    Text("Are you sure you want to log out?")
+                }
+                    .scrollIndicators(.hidden).background(Color(.systemGray6))
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarLeading) {
                             Text("Menu")
                                 .font(.title)
                                 .fontWeight(.bold)
                         }
-                        ToolbarItem(placement: .topBarTrailing) {
+                        ToolbarItem(placement: .navigationBarTrailing) {
                             HStack(spacing: 24) {
                                 Image(systemName: "gearshape.fill")
                                     .resizable()
-                                    .scaledToFill()
+                                    .scaledToFit()
                                     .frame(width: 24, height: 24)
-                                    .font(.system(size: 18, weight: .bold))
+                                    .foregroundColor(.primary)
+                                
                                 Image(systemName: "magnifyingglass")
                                     .resizable()
-                                    .scaledToFill()
+                                    .scaledToFit()
                                     .frame(width: 24, height: 24)
-                                    .font(.system(size: 18, weight: .bold))
+                                    .foregroundColor(.primary)
                             }
                         }
-                    }).background(Color(.systemGray6))
+                    }                .toolbarBackground(Color(.systemGray6), for: .navigationBar)
+                    .toolbarBackground(.visible, for: .navigationBar)
             }
         }
     }
 }
 
 #Preview {
-    MenuView()
+    MenuView(showLogoutAlert: false)
 }
-
-
-
-
-
-
 
 
